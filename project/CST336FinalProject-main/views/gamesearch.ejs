@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style/styles.css">
+    <title>Game Search</title>
+</head>
+<body>
+    <header><h1>Game Search</h1></header>
+    <br>
+    <div class="navbar mb-3">
+        <%- include('partials/navbar') %>
+    </div>
+    <br>
+    <form action="/search" method="GET" class="d-flex justify-content-center mb-3">
+        <input type="text" name="query" class="form-control w-50 me-2" placeholder="Search for a game..." required>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    <% if (search && search.length > 0) { %>
+        <form action="/favorite" method="POST">
+            <% for (let game of search) { %>
+                <div class="card mb-3 p-3">
+                    <h3 id="video_game_id">Game ID: <%= game.video_game_id %></h3>
+                    <strong>Name:</strong> <%= game.game_name %><br>
+                    <strong>Genre:</strong> <%= game.genre %><br>
+                    <strong>Studio:</strong> <%= game.studio_name %><br><br>
+
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="favorite-yes-<%= game.video_game_id %>" name="favorite[<%= game.video_game_id %>]" value="yes" class="form-check-input" required>
+                        <label for="favorite-yes-<%= game.video_game_id %>" class="form-check-label ms-1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="favorite-no-<%= game.video_game_id %>" name="favorite[<%= game.video_game_id %>]" value="no" class="form-check-input">
+                        <label for="favorite-no-<%= game.video_game_id %>" class="form-check-label ms-1">No</label>
+                    </div>
+                </div>
+            <% } %>
+
+            <button type="submit" class="btn btn-success w-100">Add to Favorite</button>
+        </form>
+        <br>
+        <br>
+    <% } else { %>
+        <p>waiting...</p>
+    <% } %>
+
+    <%- include('partials/footer') %>
+</body>
+</html>

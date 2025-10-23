@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Episode Details</h1>
+    <%- include('parts/nav.ejs') %>
+    <img id="banner2" src="/img/locate.jpg" alt="">
+    <form action="getEpisode" method="get">
+        <p>Enter an episode number (1 - 51)</p>
+        <input type="number" name="episodes" id="episodes" placeholder="Search for episodes" min="1" max="51" required>
+        <button id="submit">Submit</button>
+    </form>
+
+    <% if (eP) { %>
+        <h2><%= eP.name %></h2>
+        <p>Air Date: <%= eP.air_date %></p>
+        <p>Episode: <%= eP.episode %></p>
+        <p>Characters appear: <%= eP.characters.length %></p>
+        <p>Created: <%= eP.created %></p>
+    <% } %>
+</body>
+</html>

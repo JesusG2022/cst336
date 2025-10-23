@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Character random List</h1>
+    <%- include('parts/nav.ejs') %>
+        <img id="banner" src="/img/char.jpg" alt="">
+        <h2>Random Characters</h2>
+
+        <h3>
+            <%= char1.name %>
+        </h3>
+        <img src="<%= char1.image %>" alt="">
+        <br>
+        <br>
+<section>
+    Staus: <%= char1.status %> <br>
+    Species: <%= char1.species %> <br>
+    Gender: <%= char1.gender %> <br>
+    When it was created: <%= char1.created %> <br>
+</section>
+       
+
+        <h3>
+            <%= char2.name %>
+        </h3>
+        <img src="<%= char2.image %>" alt="">
+        <section>
+            Staus: <%= char2.status %> <br>
+            Species: <%= char2.species %> <br>
+            Gender: <%= char2.gender %> <br>
+            When it was created: <%= char2.created %> <br>
+        </section>
+        <h3>
+            <%= char3.name %>
+        </h3>
+
+        <img src="<%= char3.image %>" alt="">
+        <section>
+            Staus: <%= char3.status %> <br>
+            Species: <%= char3.species %> <br>
+            Gender: <%= char3.gender %> <br>
+            When it was created: <%= char3.created %> <br>
+        </section>
+        <h3>
+            <%= char4.name %>
+        </h3>
+        <img src="<%= char4.image %>" alt="">
+        <section>
+            Staus: <%= char4.status %> <br>
+            Species: <%= char4.species %><br>
+            Gender: <%= char4.gender %> <br>
+            When it was created: <%= char4.created %> <br>
+        </section>
+        <h3>
+            <%= char5.name %>
+        </h3>
+        <img src="<%= char5.image %>" alt="">
+        <section>
+            Staus: <%= char5.status %> <br>
+            Species: <%= char5.species %> <br>
+            Gender: <%= char5.gender %> <br>
+            When it was created: <%= char5.created %> <br>
+        </section>
+
+
+
+</body>
+
+</html>

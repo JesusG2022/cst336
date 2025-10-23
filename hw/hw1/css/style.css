@@ -1,0 +1,233 @@
+header {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #333;
+  color: #5bf247;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 100px; 
+}
+nav {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+nav > div > a {
+  color: #06b20c;
+  text-decoration: none;
+}  
+nav > div {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+main > p {
+  margin: 50px;
+  font-size: 20px;
+  color: #32ea69;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.home_banner {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  padding: 50px;
+  background-image: url('../img/AdobeStock_252570055.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;  
+}
+
+.type_banner {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  padding: 50px;
+  background-image: url('../img/type.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;  
+}
+
+.care_banner {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  padding: 50px;
+  background-image: url('../img/Careful.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;  
+}
+
+.prevent_banner {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  padding: 50px;
+  background-image: url('../img/Prevention.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;  
+}
+
+body {
+  background-color: rgb(42, 43, 43);
+  padding: 0;
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center; 
+  background-color: rgb(40, 122, 24);
+}
+
+.flex-container > div {
+  display: inline-block;
+  background-color: #454545;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+.antivirusIMG {
+  width: 150px;
+  height: 200px;
+}
+.updateIMG {
+  width: 150px;
+  height: 200px;
+}
+.firewallIMG {
+  width: 150px;
+  height: 200px;
+}
+.subtext {
+  font-size: 20px;
+}
+
+.text-right {
+  
+  color: #32ea69;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  text-align: left;
+  font-size: 40px;
+  margin-right: 25px;
+}
+
+.text-left {
+  color: #32ea69;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  text-align: left;
+  font-size: 40px;
+  margin-left: 25px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #5bf247;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.image-tpye {
+  width: 150px;
+  height: 200px;
+}
+
+.type_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
+  flex-direction: column; /* Add this line to center content vertically */
+}
+
+.number {
+margin: 10px;
+  background-color: #32ea69;
+  width: 10%;
+  height: 10%;
+}
+main > p{
+  font-size: 40px;
+  margin: 50px;
+  color: #32ea69;
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+h4 {
+  font-size: 50px;
+  text-align: center;
+  color: #5bf247;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+p {
+  font-size: 40px;
+  margin: 50px;
+  color: #32ea69;
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.home_text{
+  text-align: center;
+  font-size: 40px;
+  margin: 50px;
+  color: #32ea69;
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.hackers {
+  display: block;
+  width: 75%;
+  height: auto;
+  margin-left: auto ;
+  margin-right: auto;
+}
+
+.link{
+  
+  color: #06b20c;
+  text-decoration: underline;
+}

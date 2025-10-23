@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Location</h1>
+    <%- include('parts/nav.ejs') %>
+    <img  id = "banner2"src="/img/location.webp" alt="">
+    <form action="getLocation">
+        <input type="radio" name="location" id="location" value="1"> get 5 random location<br>
+        <input type="radio" name="location" id="location" value="2"> get give the first 5 location <br>
+        <input type="radio" name="location" id="location" value="3"> get 5 order location <br>
+        <!-- <input type="radio" name="location" value="1"> get 5 random location<br>
+        <input type="checkbox" name="location" value="2"> get give the first 5 location <br> -->
+        <button id = "subtim">Submit</button>
+        <p>option 1: get 5 random locations</p>
+        <br>
+        <p>option 2: get the main 5 locations</p>
+        <br>
+        <p>option 3: get the 5 chronologically locations</p>
+
+    </form>
+</body>
+</html>

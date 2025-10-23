@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>home</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+    <%- include ('partial/nav') %>
+
+    <div class="flex-container">
+        <% for (let i = 0; i < dinosaurs.length; i++) { %>
+            <div class="flex-item">
+              <p><%=dinosaurs[i].name %></p>
+              <br>
+              <img src="/img/<%= dinosaurs[i].image %>" alt="dino image" width="200px" height="200px">
+              <br>
+              <p><%=dinosaurs[i].weight%> Meters</p>
+              <br>
+              <p><%=dinosaurs[i].height%> Kilos</p>
+              </div>
+        <% }%>
+
+            </div>
+
+
+
+      <table border="1" width="800" cellpadding="10px">
+        <tbody>
+          <tr>
+            <th>#</th>
+            <th>Task Description</th>
+            <th>Points</th>
+          </tr>
+          <tr style="color:green">
+            <td>1</td>
+            <td>The <strong>Home</strong> page displays three random dinosaurs (name, image, height &amp; weight) next to each other. <br></td>
+            <td width="20" align="center">50</td>
+          </tr>
+          <tr style="color:green">
+            <td valign="top">2</td>
+            <td> The <strong>Add Dino</strong> page allows user to add a new dinosaur into the database. The values for the "Era" dropdown menu come from the database.
+                 <br>
+            </td>
+            <td width="20" align="center">30</td>
+          </tr>
+          <tr style="color:red">
+            <td valign="top">3</td>
+            <td> All pages include a "Search by Era" form. The values for the "Era" dropdown menu come from the database.
+                <br>
+            </td>
+            <td width="20" align="center">10</td>
+          </tr>
+          <tr style="color:red">
+            <td valign="top">4</td>
+            <td>The <strong>Search Results</strong> page displays the era name, era period (in "millions years ago"), and the name and description of the dinosaurs that lived during the selected era.<br></td>
+            <td width="20" align="center">30</td>
+          </tr>
+          <tr style="color:red">
+            <td valign="top">5</td>
+            <td>In the Search Results page, a two-column <strong>Modal Window</strong> pops up when clicking on a dinosaur's name. The first column displays its name and image; the second column displays its height and weight, and era name, and era description. For half of the credit, display the information on a separate page instead of using a modal window. <br></td>
+            <td width="20" align="center">40</td>
+          </tr>
+          <tr style="color:green">
+            <td valign="top">6</td>
+            <td><strong> All pages </strong> use Partials to display the header, the navigation menu, and the footer.<br></td>
+            <td width="20" align="center">10</td>
+          </tr>
+          <tr style="color:green">
+            <td valign="top">7</td>
+            <td>Your submission has a nice style using Bootstrap or CSS in an external file with at least 10 properties. <strong>All pages</strong> include a header, navigation menu, and a footer. The Navigation menu uses flex box.
+            <br>	
+            </td>
+            <td width="20" align="center">15</td>
+          </tr>
+          <tr style="color:green">
+            <td>8</td>
+            <td>This rubric is properly included and updated.</td>
+            <td width="20" align="center">2</td>
+          </tr>
+          
+          <tr>
+            <td></td>
+            <td>TOTAL </td>
+            <td width="20" align="center">187</td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+    <script src="/js/script.js"></script>
+
+    <%- include ('partial/footer') %>
+</body>
+</html>

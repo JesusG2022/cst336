@@ -1,0 +1,44 @@
+h1{
+    background-color: rgb(112, 255, 150);
+    font-size: 2em;
+    text-align: center;
+}
+
+.navbar {
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers the navbar items horizontally */
+  gap: 15px; /* Adds spacing between the links */
+  padding: 10px; /* Optional: Add padding for better spacing */
+  border-radius: 5px; /* Optional: Add rounded corners */
+
+}
+
+.flex-container {
+    display: flex;
+    background-color: rgb(101, 249, 37);
+    align-items: center;
+  }
+  
+  .flex-container > div {
+    align-items: center;
+    text-align: center;
+    background-color: #ebffec;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh;
+}

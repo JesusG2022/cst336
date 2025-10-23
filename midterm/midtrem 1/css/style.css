@@ -1,0 +1,26 @@
+.flex-container {
+  display: flex;
+  justify-content: center; 
+  background-color: rgb(122, 197, 97);
+}
+
+.flex-container > div {
+  display: inline-block;
+  background-color: #efe4e4;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#result {
+  display: none;
+}
+
+#yourM{
+  font-size: 100px;
+}
+
+#historyF{
+  display: none;
+}

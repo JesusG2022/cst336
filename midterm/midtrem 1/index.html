@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/underscore@1.13.7/underscore-umd-min.js"></script>
+    <title>Mid-Term 1</title>
+</head>
+<body>
+    <header>
+        <div class="flex-container">
+            <div class="flex-container">
+                <div id="img1"></div>
+                <div>
+                    <h1>Dice game</h1>
+                </div>
+                <div id="img2"></div>  
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <select name="background" id="background">
+                <option>none</option>
+                <option>coin</option>
+                <option>dice</option>
+                <option>bill</option>
+            </select>
+            <button id="update">update</button>
+        </div>
+        <div>
+            <p id ="yourM">Your money is: 50</p>
+            <input type="number" id="bet">
+            <button id="betBtn">Play</button>
+        </div>
+        <div id="result">
+            <div class="flex-container">
+                <div class="flex-container">
+                    <div id="i1"></div>
+                    <div>
+                        <p id="wonOrLose"></p>    
+                    </div>
+                    <div id="i2"></div>  
+                </div>
+            </div>
+        </div>
+        <button id = "history">history</button>
+        <div id="historyF">
+            <div class="flex-container">
+                <div class="flex-container">
+                    <div id="playerHist"></div>
+                    <div></div>
+                    <div id="r2">
+                        <p id="cpuHist"></p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/srcipt.js"></script>
+</body>
+</html>

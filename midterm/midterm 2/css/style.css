@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    /* background-color: #f1f1f1; */
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+  #plane_right, #plane_left{
+    width: 200px;
+    height: auto;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+
+  

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="/style/style.css"> <!-- Corrected path -->
+   <title>Add Author</title>
+</head>
+<body>
+
+    <h1>Add an Author</h1>
+    <%- include('partial/nav') %>
+    <section>
+    <% if (typeof message !== 'undefined') { %>
+        <p style="color: green;"><%= message %></p>
+    <% } %>
+    <form action="/addAuthor" method="POST">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        <br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+        <br>
+        <label for="birth_date">Birth Date:</label>
+        <input type="date" id="birth_date" name="birth_date" required>
+        <br>
+        <label for="death_date">Death Date:</label>
+        <input type="date" id="death_date" name="death_date">
+            <aside>
+            <input type="radio" id="male" name="sex" value="M">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="F">
+            <label for="female">Female</label>
+        </aside>
+        <label for="pro">Profession:</label>
+        <input type="text" id="pro" name="pro" required>
+        <br>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+        <br>
+        <label for="pic">Picture URL:</label>
+        <textarea id="pic" name="pic"></textarea>
+        <br>
+        <label for="bio">Biography:</label>
+        <textarea id="bio" name="bio"></textarea>
+        <br>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</section>
+    <script src="/js/author.js"></script>
+</body>
+</html>

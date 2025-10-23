@@ -1,0 +1,40 @@
+header{
+    font-size: 100px;
+text-align: center;
+}
+h1{
+    font-size: 25px;
+    text-align: center;
+}
+
+#GuessInput{
+    display: center ;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.background{
+    background-color: lightcyan;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: auto;
+}
+
+.footer{
+    text-align: center;
+    font-family:Georgia;
+    color:blue
+}

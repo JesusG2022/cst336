@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/underscore@1.13.7/underscore-umd-min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>CS quiz</h1>
+
+    <div class="question-container">
+        <img src="img/checkMark.jpg" alt="correct1" id="correct1" class="mark" style="display: none;">
+        <img src="img/XMark.jpg" alt="wrong1" id="wrong1" class="mark" style="display: none;">
+        <p id="question1">1. What is the CSS property to change the text color?</p>
+    </div>
+    <label>
+        <input type="radio" name="q1" value="a">text-color
+        <input type="radio" name="q1" value="b">font-color
+        <input type="radio" name="q1" value="color">color
+    </label>
+    <br><br>
+
+    <div class="question-container">
+        <img src="img/checkMark.jpg" alt="correct2" id="correct2" class="mark" style="display: none;">
+        <img src="img/XMark.jpg" alt="wrong2" id="wrong2" class="mark" style="display: none;">
+        <p id="question2">2. What folders do we need for JavaScript and CSS files?</p>
+    </div>
+    <div id="q2Choices"></div>
+    <br><br>
+
+    <div class="question-container">
+        <img src="img/checkMark.jpg" alt="correct3" id="correct3" class="mark" style="display: none;">
+        <img src="img/XMark.jpg" alt="wrong3" id="wrong3" class="mark" style="display: none;">
+        <p id="question3">3. What is the CSS property to change indenting?</p>
+    </div>
+    <div>
+        <input type="text" id="q3">
+    </div>
+    <br>
+
+    <div class="question-container">
+        <img src="img/checkMark.jpg" alt="correct4" id="correct4" class="mark" style="display: none;">
+        <img src="img/XMark.jpg" alt="wrong4" id="wrong4" class="mark" style="display: none;">
+        <p id="question4">4. How many variables can you return per function in JavaScript?</p>
+    </div>
+    <div>
+        <input type="number" id="q4">
+    </div>
+    <br><br>
+
+    <div class="question-container">
+        <img src="img/checkMark.jpg" alt="correct5" id="correct5" class="mark" style="display: none;">
+        <img src="img/XMark.jpg" alt="wrong5" id="wrong5" class="mark" style="display: none;">
+        <p id="question5">5. What is the time complexity of a for loop?</p>
+    </div>
+    <div>
+        <select name="q5" id="qu5">
+            <option value="">Select</option>
+            <option value="a">O(n)</option>
+            <option value="b">O(n^2)</option>
+            <option value="c">O(LOGn)</option>
+        </select>
+    </div>
+    <br><br>
+
+    <p id="scoreText"></p>
+    <br><br>
+    <button id="Submit">Submit</button>
+    <button id="resetButton" style="display: none;">Reset</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

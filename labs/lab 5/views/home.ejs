@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Solar System</h1>
+    <%- include('partial/navbar.ejs') %>
+    <img id = "backHome" src="<%= bg %>" alt="">
+
+    </form>
+    <br>
+    <br>
+    <h2>Pick other thing</h2>
+    <form action="/getComets">
+        <select name="other">
+            <option value="Comet">Comet</option>
+            <option value="Asteroid">Asteroid</option>
+        </select>
+
+        <button>Submit</button>
+    </form>
+<%- include('partial/footer.ejs') %>
+</body>
+</html>

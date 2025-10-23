@@ -1,0 +1,31 @@
+body {
+    display: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: aquamarine;
+}
+
+h1{
+    text-align: center;
+    background-color: aqua;
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+section{
+    padding-top: 50px;
+}
+
+
+img {
+    display: block; /* Ensures the images are displayed as block elements */
+    background-color: aqua;
+    margin: 0 auto; /* Centers the images horizontally */
+    width: 250px; /* Ensures the images do not exceed their container's width */
+    height: auto; /* Maintains the aspect ratio of the images */
+    padding: 50px; /* Adds some padding around the images */
+    border-radius: 100px; /* Optional: Adds rounded corners */
+}

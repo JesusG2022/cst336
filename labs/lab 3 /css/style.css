@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(177, 192, 10);
+    text-align: center;
+    margin: 0;
+
+
+}
+.question-container {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 201); 
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+}
+h1 {
+    text-align: center;
+    color: darkblue;
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.mark {
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle; 
+    margin-left: 10px;
+}
+
+.question-container {
+    display: flex;
+    align-items: center;
+}
+
+.correct1, .wrong1, .correct2, .wrong2, .correct3, .wrong3, .correct4, .wrong4, .correct5, .wrong5 {
+    width: 20px; 
+    height: 20px;
+}

@@ -1,0 +1,106 @@
+body{
+    background-color: rgb(133, 114, 3);
+}
+header{
+background-color: #000099;
+/* width: 75%; */
+/* border-radius: 50px; */
+margin: -1;
+}
+.title{
+    font-size: 50px;
+    background-color: #0f0feb;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 75%;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+nav{
+    text-align: center;
+    background-color: #e9ed0d;
+    /* width: 75%; */
+    /* border-radius: 50px; */
+    margin: 0 auto;
+}
+
+nav > div{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(174, 171, 150);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.flex-container {
+    align-items: center;
+    display: flex;
+    background-color: DodgerBlue;
+}
+
+.flex-container > div {
+    align-items: center;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+footer {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+}
+footer > div > p {
+font-size: 10px;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+footer > img {
+    width: 100px;  /* Adjust the width as needed */
+    height: auto;
+    border-radius: 200px;
+    margin: 0 auto;
+    margin-right: 20px; /* Add some space between the image and the text */
+}
+
+footer > div {
+    flex: 1;
+}
+
+.centered-form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titleabout{
+    font-size: 50px;
+    background-color: #0f0feb;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 75%;
+    border-radius: 50px;
+    margin: 0 auto;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+table {
+    background-color: #000000; /* Background color for the entire table */
+}
+
+table th {
+    background-color: #3f3ff5; /* Background color for the table header */
+}
+
+table tr:nth-child(even) {
+    background-color: #e0e0e0; /* Background color for even rows */
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff; /* Background color for odd rows */
+}

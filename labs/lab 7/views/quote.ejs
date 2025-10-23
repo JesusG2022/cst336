@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/style/style.css"> <!-- Corrected path -->
+        <title>Quotes</title>
+    </head>
+<body>
+
+    <h1>Quotes</h1>
+    <%- include('partial/nav') %>
+    <section>
+    <ul>
+        <% rows.forEach(quote => { %>
+            <li>
+                <strong>Quote ID:</strong> <%= quote.quoteId %><br>
+                <strong>Quote:</strong> <%= quote.quote %><br>
+                <strong>Author ID:</strong> <%= quote.authorId %><br>
+                <strong>Category:</strong> <%= quote.category %><br>
+                <strong>Likes:</strong> <%= quote.likes %><br>
+            
+                <a href="/editQuote?quoteId=<%= quote.quoteId %>" class="btn btn-success">Edit</a>
+            <br>
+                <form action="/deleteQuote" method="POST" style="display:inline;">
+                    <input type="hidden" name="quoteId" value="<%= quote.quoteId %>">
+                    <button type="submit" class = 'btn btn-danger btn'>Delete</button>
+                </form>
+                <br>
+                <br>
+            </li>
+            <br>
+        <% }); %>
+    </ul>
+</section>
+    <script src="/js/quote.js"></script>
+</body>
+</html>
